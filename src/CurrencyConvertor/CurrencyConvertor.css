@@ -1,0 +1,79 @@
+.ConverterBlock {
+  background: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(41px);
+  -webkit-backdrop-filter: blur(6px);
+  border-radius: 10px;
+  border: 0.7px solid rgba(255, 255, 255, 0.56);
+  padding: 40px 0px;
+}
+
+.ConverterBlock-base {
+  font-weight: 600;
+  color: #ECBDD0;
+}
+
+.ConverterBlock-convertTo {
+  font-weight: 600;
+  color: #F3B69A;
+}
+
+.form-control {
+  opacity: 0.3;
+  padding: 12px 45px;
+  background: #ffffff;
+  border: 0.7px solid rgba(255, 255, 255, 0.56);
+  border-radius: 8px;
+}
+
+.form-control:focus {
+  border: 0.7px solid #C0B9DA;
+  background: #ffffff;
+}
+
+.swapbtn {
+  cursor: pointer;
+  padding: 7px 20px;
+  border: none;
+  background: -webkit-gradient(linear, left top, right top, color-stop(5.21%, #F3B69E), color-stop(39.58%, rgba(240, 182, 171, 0)));
+  background: linear-gradient(90deg, #F3B69E 5.21%, rgba(240, 182, 171, 0) 39.58%);
+  -webkit-box-shadow: 0px 4px 55px rgba(0, 0, 0, 0.25);
+          box-shadow: 0px 4px 55px rgba(0, 0, 0, 0.25);
+  border-radius: 25px;
+}
+
+.swapbtn span {
+  color: #fff;
+}
+
+.form-select {
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  display: -ms-grid;
+  display: grid;
+      grid-template-areas: "select";
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  outline: none;
+  opacity: 0.3;
+  padding: 10px 25px;
+  background: #ffffff;
+  border: 0.7px solid rgba(255, 255, 255, 0.56);
+  border-radius: 8px;
+}
+
+.form-select::after {
+  content: "";
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: select;
+  -ms-grid-column-align: end;
+      justify-self: end;
+  width: 0.8em;
+  height: 0.5em;
+  background-color: var(--select-arrow);
+  -webkit-clip-path: polygon(100% 0%, 0 0%, 50% 100%);
+          clip-path: polygon(100% 0%, 0 0%, 50% 100%);
+}
+/*# sourceMappingURL=CurrencyConvertor.css.map */

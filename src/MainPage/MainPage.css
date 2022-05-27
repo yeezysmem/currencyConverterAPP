@@ -1,0 +1,51 @@
+@-webkit-keyframes levitate {
+  0% {
+    -webkit-transform: translatey(0px);
+            transform: translatey(0px);
+  }
+  50% {
+    -webkit-transform: translatey(-20px);
+            transform: translatey(-20px);
+  }
+  100% {
+    -webkit-transform: translatey(0px);
+            transform: translatey(0px);
+  }
+}
+
+@keyframes levitate {
+  0% {
+    -webkit-transform: translatey(0px);
+            transform: translatey(0px);
+  }
+  50% {
+    -webkit-transform: translatey(-20px);
+            transform: translatey(-20px);
+  }
+  100% {
+    -webkit-transform: translatey(0px);
+            transform: translatey(0px);
+  }
+}
+
+.leftHand {
+  -webkit-transform: translatey(0px);
+          transform: translatey(0px);
+  -webkit-animation: levitate 6s ease-in-out infinite;
+          animation: levitate 6s ease-in-out infinite;
+  z-index: 1000;
+  position: relative;
+  bottom: 200px;
+  left: -80px;
+}
+
+.rightHand {
+  -webkit-transform: translatey(0px);
+          transform: translatey(0px);
+  -webkit-animation: levitate 6s ease-in infinite;
+          animation: levitate 6s ease-in infinite;
+  z-index: 1000;
+  position: relative;
+  right: -30px;
+}
+/*# sourceMappingURL=MainPage.css.map */

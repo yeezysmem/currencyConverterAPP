@@ -1,0 +1,65 @@
+.ConverterBlock {
+    background: rgba( 255, 255, 255, 0.2 );
+    backdrop-filter: blur( 41px );
+    -webkit-backdrop-filter: blur( 6px );
+    border-radius: 10px;
+    border: 0.7px solid rgba(255, 255, 255, 0.56);
+    padding: 40px 0px;
+
+    &-base {
+        font-weight: 600;
+        color: #ECBDD0;
+    }
+    &-convertTo {
+        font-weight: 600;
+        color: #F3B69A;
+    }
+ 
+
+}
+.form-control {
+  opacity: 0.3;
+  padding: 12px 45px;
+  background: #ffffff;
+  border: 0.7px solid rgba(255, 255, 255, 0.56);
+  border-radius: 8px;
+  &:focus {
+      border:0.7px solid #C0B9DA;
+      background: #ffffff;
+      
+  }
+}
+
+.swapbtn {
+    cursor: pointer;
+    padding: 7px 20px;
+    border: none;
+    background: linear-gradient(90deg, #F3B69E 5.21%, rgba(240, 182, 171, 0) 39.58%);
+    box-shadow: 0px 4px 55px rgba(0, 0, 0, 0.25);
+    border-radius: 25px;
+    span {
+        color: #fff;
+    }
+}
+
+.form-select {
+    appearance:none;
+    display: grid;
+    grid-template-areas: "select";
+    align-items: center;
+    outline: none;
+  opacity: 0.3;
+  padding: 10px 25px;
+  background: #ffffff;
+  border: 0.7px solid rgba(255, 255, 255, 0.56);
+  border-radius: 8px;
+  &::after {
+    content: "";
+    grid-area: select;
+    justify-self: end;
+    width: 0.8em;
+    height: 0.5em;
+    background-color: var(--select-arrow);
+    clip-path: polygon(100% 0%, 0 0%, 50% 100%);
+  }
+}
